@@ -1,22 +1,22 @@
-# Todo App
-Welcome to the Todo App! This app is a simple way to keep track of your tasks and to-do items. It is built using the PERN stack (PostgreSQL, Express, React, and Node.js).
+# Todo App  
+Welcome to the Todo App! This app is a simple way to keep track of your tasks and to-do items. It is built using the PERN stack (PostgreSQL, Express, React, and Node.js).  
 
-## Getting Started
-1. Clone the repository onto your local machine:
-`git clone https://github.com/<your-username>/todo-app.git`
-2. Install the dependencies:
-`npm install`
-3. Set up the database:
-* Create a PostgreSQL database called todo_app
-* In the root directory of the project, create a file called .env
-* In the .env file, add the following line, replacing <password> with your PostgreSQL password:
-`DATABASE_URL=postgresql://<username>:<password>@localhost/todo_app`
+## Getting Started  
+1. Clone the repository onto your local machine:  
+`git clone https://github.com/<your-username>/todo-app.git`  
+2. Install the dependencies:  
+`npm install`  
+3. Set up the database:  
+* Create a PostgreSQL database called todo_app  
+* In the root directory of the project, create a file called .env  
+* In the .env file, add the following line, replacing <password> with your PostgreSQL password:  
+`DATABASE_URL=postgresql://<username>:<password>@localhost/todo_app`  
 
-4. Migrate the database:
-`npm run migrate`
+4. Migrate the database:  
+`npm run migrate`  
 
-5. Seed the database (optional):
-`npm run seed`
+5. Seed the database (optional):  
+`npm run seed`  
 
 6. Start the app:
 `npm run start`
