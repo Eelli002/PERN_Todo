@@ -18,22 +18,22 @@ Welcome to the Todo App! This app is a simple way to keep track of your tasks an
 5. Seed the database (optional):  
 `npm run seed`  
 
-6. Start the app:
-`npm run start`
-The app will now be running on http://localhost:3000.
+6. Start the app:  
+`npm run start`  
+The app will now be running on http://localhost:3000.  
 
-## Using the App
+## Using the App  
 * To add a new todo item, type the task into the input field and press the "Add Todo" button.
 * To mark a todo as complete, click on the checkbox next to the task.
 * To delete a todo, click on the trash icon next to the task.
 
-## Built With
-**PostgreSQL** - The database
-**Express** - The web framework
-**React** - The front-end library
-**Node.js** - The runtime environment
+## Built With  
+**PostgreSQL** - The database  
+**Express** - The web framework  
+**React** - The front-end library  
+**Node.js** - The runtime environment  
 
-## Author
+## Author  
 * Elijah Elliott - https://github.com/Eelli002
 
 
