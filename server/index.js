@@ -1,11 +1,12 @@
 const express = require('express');
-const cors = require('cors')
 const app = express();
+
+const cors = require('cors')
 const pool = require('./db');
 
 /**** MIDDLEWARE ****/
 app.use(cors());
-app.use(express.json());
+app.use(express.json()); // Used to parse incoming HTTP POST requests with JSON payloads.
 
 
 /**** ROUTES ****/
@@ -14,7 +15,10 @@ app.use(express.json());
 app.post('/todos', async(req, res) => {
     try 
     {
-        console.log(req.body);
+        const { description } = req.body;
+        const newTodo = await pool.query("INSERT INTO todo (description) VALUES($1)", [description]);
+
+        res.json(newTodo);
     } 
     catch (error) 
     {
