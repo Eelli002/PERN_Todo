@@ -14,7 +14,6 @@ const EditTodo = ({todo}) => {
                     `http://localhost:3001/todos/${todo.todo_id}`, 
                     {method: 'PUT', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body)}
                 );
-            console.log(response);
             window.location = '/';
         } 
         catch (error) 
