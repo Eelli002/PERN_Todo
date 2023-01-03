@@ -17,11 +17,7 @@ const ListTodos = () => {
         }
     }
 
-    useEffect(() => { 
-        getTodos();
-    }, []);
-
-    console.log(todos)
+    useEffect(getTodos, []);
 
     return (
         <>
@@ -34,16 +30,14 @@ const ListTodos = () => {
                         <th>Delete</th>
                     </tr>
                 </thead>
-                <tbody>
-                    {
-                    todos.map(todo => (
+                <tbody> 
+                    { todos.map(todo => (
                         <tr>
                             <td>{todo.description}</td>
                             <td>Edit</td>
                             <td>Delete</td>
                         </tr> 
-                    ))
-                    }     
+                    ))} 
                 </tbody>
             </table>
         </>
